@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Starbucks Coffee Korea Clone</title>
+	<!-- Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Starbucks" />    
+	<meta property="og:title" content="Starbucks Coffee Korea" />
+	<meta property="og:description" content="Starbucks Korea Clone Coding by Zion Kang" />
+	<meta property="og:image" content="/assets/images/starbucks_seo.jpg" />
+	<meta property="og:url" content="https://starbucks.co.kr" />
+	<!-- Twitter Card -->
+	<meta property="twitter:card" content="summary" />  
+	<meta property="twitter:site" content="Starbucks" />
+	<meta property="twitter:title" content="Starbucks Coffee Korea" />
+	<meta property="twitter:description" content="Starbucks Korea Clone Coding by Zion Kang" />
+	<meta property="twitter:image" content="/assets/images/starbucks_seo.jpg" />
+	<meta property="twitter:url" content="https://starbucks.co.kr" />    
+	<!-- Google Fonts & Material Icon-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- CSS link -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
+  <!-- lodash.js & gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js" integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ==" crossorigin="anonymous"></script>
+  <!-- Swiper Library -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>
+  <!-- Javascript -->
+  <script defer src="/assets/js/youtube.js"></script>
+  <script defer src="/assets/js/main.js"></script>
+</head>
+<body>
+<!-- Header -->
+	<header>
+		<div class="inner">
+			<a class = "logo" href="/"><img src="/assets/images/starbucks_logo.png" alt="Starbucks_logo"></a>
+			<div class="sub-menu">
+				<ul class="menu">
+					<li>
+						<a href="/signin">Sign In</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">My Starbucks</a>
+					</li>
+          <li>
+						<a href="javascript:void(0)">Customer Service & Ideas</a>
+					</li>
+          <li>
+						<a href="javascript:void(0)">Find a store</a>
+					</li>
+				</ul>
+				<div class="search">
+					<input type="text">
+					<div class="material-icons">search</div>
+				</div>
+			</div>
+      <ul class="main-menu">
+        <li class="item">
+          <div class="item__name">COFFEE</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>Coffee</h4>
+                  <ul>
+                    <li>Starbucks Beans</li>
+                    <li>Starbucks Via</li>
+                    <li>Starbucks Origami</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Espresso Drink</h4>
+                  <ul>
+                    <li>Doppio</li>
+                    <li>Espresso Macchiato</li>
+                    <li>Americano</li>
+                    <li>Macchiato</li>
+                    <li>Cappuccino</li>
+                    <li>Latte</li>
+                    <li>Mocha</li>
+                    <li>Ristretto Bianco</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Coffee Story</h4>
+                  <ul>
+                    <li>Starbucks Roast Spectrum</li>
+                    <li>Arabica beans</li>
+                    <li>To finish a cup of Coffee</li>
+                    <li>Clover Coffee System</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Best ways to enjoy Coffee</h4>
+                  <ul>
+                    <li>Coffee Press</li>
+                    <li>Pure Over</li>
+                    <li>Ice Pure Over</li>
+                    <li>Coffee Maker</li>
+                    <li>Enjoy Coffee at Starbucks Reserve</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>Finding a coffee that matches you</h4>
+                <p>Starbucks will have you find a cofee that matches you</p>
+                <h4>The best way to enjoy coffee</h4>
+                <p>Enjoy coffee in various ways</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">MENU</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>Drink</h4>
+                  <ul>
+                    <li>Cold Brew</li>
+                    <li>Brewed Coffee</li>
+                    <li>Espresso</li>
+                    <li>Frappuccino</li>
+                    <li>Blended Drink</li>
+                    <li>Starbucks Fizzio™</li>
+                    <li>Starbucks Tea</li>
+                    <li>Other Drinks</li>
+                    <li>Starbucks Juice</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Food</h4>
+                  <ul>
+                    <li>Bakery</li>
+                    <li>Cake</li>
+                    <li>Sandwich & Salad</li>
+                    <li>Warm Food</li>
+                    <li>Fruits & Yougurt</li>
+                    <li>Snaks & Mini Desert</li>
+                    <li>Ice Cream</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Items</h4>
+                  <ul>
+                    <li>Mug</li>
+                    <li>Glass</li>
+                    <li>Plastic Tumbler</li>
+                    <li>Stainless Tumbler</li>
+                    <li>Thermos</li>
+                    <li>Accessories</li>
+                    <li>Other Coffee related item</li>
+                    <li>Pacakage Tea</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Card</h4>
+                  <ul>
+                    <li>Gift Card</li>
+                    <li>e-Gift Card</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Menu Story</h4>
+                  <ul>
+                    <li>Cold Brew</li>
+                    <li>Starbucks Teavana</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4 class="new">Starbucks Teavana</h4>
+                <p>Starbucks Teavana serves with various flavors with enjoyable ingredients</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">STORE</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>Find a store</h4>
+                  <ul>
+                    <li>Quick Search</li>
+                    <li>Store near me</li>
+                    <li>My Store</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Story of Stores</h4>
+                  <ul>
+                    <li>Store at ChungDam</li>
+                    <li>Teavana Store</li>
+                    <li>Park</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>Find stores</h4>
+                <p>You can search the store now online</p>
+                <h4 class="new">ChungDam</h4>
+                <p>Starbucks' 1,000th store is located at ChungDam</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">RESPONSIBILITY</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>Volunteer and Community Donation</h4>
+                  <ul>
+                    <li>Hope Delivery Campaign</li>
+                    <li>Cafe information</li>
+                    <li>Community Store</li>
+                    <li>Teen program</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Saving Mother Earth</h4>
+                  <ul>
+                    <li>Store that uses no Disposable Cups</li>
+                    <li>Recycle of coffee beans</li>
+                  </ul>
+                </li>
+                <li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>Recycle of Coffee Beans</h4>
+                <p>Try recycled beans</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">MY STARBUCKS REWARDS</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>My Starbucks Rewards</h4>
+                  <ul>
+                    <li>Introduction of rewards</li>
+                    <li>Detalis of rewards</li>
+                    <li>Starbucks Star</li>
+                    <li>FAQs</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Starbucks Cards</h4>
+                  <ul>
+                    <li>Starbucks Cards</li>
+                    <li>Starbucks Cards Gallery</li>
+                    <li>How to register</li>
+                    <li>How to redeem the card</li>
+                    <li>Refund/Return</li>
+                    <li>FAQs</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Starbucks Card e-Gift Card</h4>
+                  <ul>
+                    <li>Starbucks Card e-Gift Card</li>
+                    <li>Introduction</li>
+                    <li>How to send the gift</li>
+                    <li>FAQs</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>How to register Starbucks Card</h4>
+                <p>Register your Starbucks Cards to enjoy the benefits</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">WHAT'S NEW</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>Promotion & Events</h4>
+                  <ul>
+                    <li>All</li>
+                    <li>Starbucks Card</li>
+                    <li>My Starbucks Rewards</li>
+                    <li>Online</li>
+                    <li>Starbucks Planner</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>News</h4>
+                  <ul>
+                    <li>All</li>
+                    <li>New Products</li>
+                    <li>Starbucks Culture</li>
+                    <li>Starbucks Community</li>
+                    <li>Starbucks Card</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Local Store Events</h4>
+                  <ul>
+                    <li>Local Stores</li>
+                    <li>New Stores</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>Local Stores Events</h4>
+                <p>Find what if your local stores have events</p>
+                <h4>Social Starbucks</h4>
+                <p>Find us at SNS</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+		</div>
+    <div class="badges">
+      <div class="badge">
+        <img src="/assets/images/badge1.jpg" alt="Badge">
+      </div>
+    <div class="badge">
+      <img src="/assets/images/badge2.jpg" alt="Badge">
+    </div>
+  </div>
+  </div>
+	</header>
+<!-- First Visual Section -->
+  <section class="visual">
+    <div class="inner">
+      <div class="title fade-in">
+        <img src="/assets/images/visual_title.png" alt="slide,title:start to the years">
+        <a href="/" class="btn btn--brown">More Details</a>
+      </div>
+      <div class="fade-in">
+        <img src="/assets/images/visual_cup1.png" alt="New Oatmeal Latte" class="cup1 image">
+        <img src="/assets/images/visual_cup1_text.png" alt="Oatmeal Latte" class="cup1 text">
+      </div>
+      <div class="fade-in">
+        <img src="/assets/images/visual_cup2.png" alt="New Starbucks Caramel Crumble Mocha" class="cup2 image">
+        <img src="/assets/images/visual_cup2_text.png" alt="Starbucks Caramel Crumble Mocha" class="cup2 text">
+      </div>
+      <div class="fade-in">
+        <img src="/assets/images/visual_spoon.png" alt="Starbucks Spoon" class="spoon">
+      </div>
+    </div>
+  </section>
+  <!-- Annoucement and Promotion slide -->
+  <section class="notice">
+    <div class="notice-line">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+        <div class="inner__left">
+          <h2>Annoucement</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">2021 Starbucks Holiday Store Hours</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">2021 Starbucks Planner Events</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">Latest Starbucks Application Version Update</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">New Year Events</a>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="notice-line__more">
+            <div class="material-icons">add_circle</div>
+          </a>
+        </div>
+        <div class="inner__right">
+          <h2>Starbucks Promotion</h2>
+          <div class="toggle-promotion">
+            <div class="material-icons">expand</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="promotion">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/assets/images/promotion_slide1.jpg" alt="2021 New Year, enjoy with Starbucks">
+            <a href="javascript:void(0)" class="btn">More Details</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/promotion_slide2.jpg" alt="2021 New Year, enjoy with Starbucks">
+            <a href="javascript:void(0)" class="btn">More Details</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/promotion_slide3.jpg" alt="2021 New Year, enjoy with Starbucks">
+            <a href="javascript:void(0)" class="btn">More Details</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/promotion_slide4.jpg" alt="2021 New Year, enjoy with Starbucks">
+            <a href="javascript:void(0)" class="btn">More Details</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/promotion_slide5.jpg" alt="2021 New Year, enjoy with Starbucks">
+            <a href="javascript:void(0)" class="btn">More Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-prev">
+        <div class="material-icons">arrow_back</div>
+      </div>
+      <div class="swiper-next">
+        <div class="material-icons">arrow_forward</div>
+      </div>
+    </div>
+  </section>
+  <!-- Starbucks Rewards -->
+  <section class="rewards">
+    <div class="bg-left"></div>
+    <div class="bg-right"></div>
+    <div class="inner">
+      <div class="btn-group">
+        <div class="btn btn--reverse sign-up">Register</div>
+        <div class="btn sign-in">Log in</div>
+        <div class="btn gift">Send e-Gift</div>
+      </div>
+    </div>
+  </section>
+  <!-- Youtube Video -->
+  <section class="youtube">
+    <div class="youtube__area">
+      <div id="player"></div>
+    </div>
+    <div class="youtube__cover"></div>
+    <div class="inner">
+      <img src="/assets/images/floating1.png" alt="icon" class="floating floating1">
+      <img src="/assets/images/floating2.png" alt="icon"class=" floating floating2">
+    </div>
+  </section>
+  <!-- SEASON PRODUCT -->
+  <section class="season-product scroll-spy">
+    <div class="inner">
+      <img src="/assets/images/floating3.png" alt="icon"class=" floating floating3">
+      <img src="/assets/images/season_product_image.png" alt="season product image" class="product back-to-position to-right delay-0">
+      <div class="text-group">
+        <img src="/assets/images/season_product_text1.png" alt="product text" class="title back-to-position to-left delay-1">
+        <img src="/assets/images/season_product_text2.png" alt="product text" class="description back-to-position to-left delay-2">
+        <div class="more back-to-position to-left delay-3">
+          <a href="javascript:void(0)" class="btn">More Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- RESERVE COFFEE -->
+  <section class="reserve-coffee scroll-spy">
+    <div class="inner">
+      <img src="/assets/images/reserve_logo.png" alt="reserve logo" class="reserve-logo back-to-position to-right delay-0">
+      <div class="text-group">
+        <img src="/assets/images/reserve_text.png" alt="reserve text" class="description back-to-position to-right delay-1">
+        <div class="more back-to-position to-right delay-2">
+          <a href="javascript:void(0)" class="btn btn--gold">More Detail</a>
+        </div>
+      </div>
+      <img src="/assets/images/reserve_image.png" class="product back-to-position to-left delay-3" alt="reserve image">
+    </div>
+  </section>
+  <!-- Pick your favorite -->
+  <section class="pick-your-favorite scroll-spy">
+    <div class="inner">
+      <div class="text-group">
+        <img src="/assets/images/favorite_text1.png" class="title back-to-position to-right delay-0" alt="favorite text">
+        <img src="/assets/images/favorite_text2.png" class="description back-to-position to-right delay-1" alt="favorite text">
+        <div class="more back-to-position to-right delay-2">
+          <a href="javascript:void(0)" class="btn btn--white">More Detail</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Reserve Store -->
+  <section class="reserve-store">
+    <div class="inner">
+      <div class="medal">
+        <div class="front">
+          <img src="/assets/images/reserve_store_medal_front.png" alt="front of the medal">
+        </div>
+        <div class="back">
+          <img src="/assets/images/reserve_store_medal_back.png" alt="back of the medal">
+          <a href="javascript:void(0)"class="btn">Find the Reverse Store</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Find the store -->
+  <section class="find-store scroll-spy">
+    <div class="inner">
+      <img src="/assets/images/find_store_texture1.png" class="texture1" alt="texture">
+      <img src="/assets/images/find_store_texture2.png" class="texture2" alt="texture">
+      <img src="/assets/images/find_store_picture1.jpg" class="picture picture1 back-to-position to-right delay-0"alt="picture">
+      <img src="/assets/images/find_store_picture2.jpg" class="picture picture2 back-to-position to-right delay-1"alt="picture">
+      <div class="text-group">
+        <img src="/assets/images/find_store_text1.png" class="title back-to-position to-left delay-0" alt="picture">
+        <img src="/assets/images/find_store_text2.png" class="description back-to-position to-left delay-1" alt="picture">
+        <div class="more back-to-position to-left delay-2">
+          <a href="javascript:void(0)" class="btn">Find Stores</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Awards -->
+  <section class="awards">
+    <div class="inner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/assets/images/awards_slide1.jpg" alt="awards_slide">
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/awards_slide2.jpg" alt="awards_slide">
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/awards_slide3.jpg" alt="awards_slide">
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/awards_slide4.jpg" alt="awards_slide">
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/awards_slide5.jpg" alt="awards_slide">
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/awards_slide6.jpg" alt="awards_slide">
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/awards_slide7.jpg" alt="awards_slide">
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/awards_slide8.jpg" alt="awards_slide">
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/awards_slide9.jpg" alt="awards_slide">
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/awards_slide10.jpg" alt="awards_slide">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-prev">
+        <div class="material-icons">arrow_back</div>
+      </div>
+      <div class="swiper-next">
+        <div class="material-icons">arrow_forward</div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="inner">
+      <ul class="menu">
+        <li><a href="javascript:void(0)" class="green">Privay</a></li>
+        <li><a href="javascript:void(0)">Agreement</a></li>
+        <li><a href="javascript:void(0)">About us</a></li>
+        <li><a href="javascript:void(0)">Management</a></li>
+        <li><a href="javascript:void(0)">Careers</a></li>
+        <li><a href="javascript:void(0)">Starbucks Gift Card</a></li>
+      </ul>
+      <div class="btn-group">
+        <a href="javascript:void(0)" class="btn btn--transparent">Find Stores</a>
+        <a href="javascript:void(0)" class="btn btn--transparent">FAQs</a>
+        <a href="javascript:void(0)" class="btn btn--transparent">Site Maps</a>
+      </div>
+      <p class="copyright">
+        &copy; <span class="this-year"></span> Starbucks Coffee Company. All Rights Reversed.
+      </p>
+      <img src="/assets/images/starbucks_logo_only_text.png" alt="" class="logo">
+    </div>
+  </footer>
+  <div id="to-top">
+    <div class="material-icons">arrow_upward</div>
+  </div>
+</body>
+</html>
